@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoQuest Reels</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F7FAF4;
+  color: #244B35;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.feed {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.reel {
+  min-height: calc(100vh - 60px);
+  padding: 12px 16px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  height: calc(100vh - 100px);
+  object-fit: cover;
+  border-radius: 18px;
+  background: #DCE9D1;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <span>EcoQuest Reels</span>
+  <span>🌿</span>
+</header>
+
+<div class="feed">
+
+  <section class="reel">
+    <video controls playsinline preload="auto">
+      <source src="./videos/video1.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </section>
+
+  <section class="reel">
+    <video controls playsinline preload="auto">
+      <source src="./videos/video2.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </section>
+
+</div>
+
+</body>
+</html>
