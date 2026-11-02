@@ -1,2 +1,2 @@
-# EcoQuestt
-EcoQuest Reels Educational Videos!!
+# EcoQuest
+EcoQuest Reels Educational Videos
